@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Global and local variables fo javascript</title>
+</head>
+<body>
+<script type="text/javascript">
+    /*
+    全局变量的生命周期是打开时声明，在关闭是销毁。
+    局部变量的生命周期是函数开始时声明，函数结束时销毁
+     */
+    var i = 100; // global variables
+    function acess(){
+        var i = 50 //local variables
+        window.alert("i="+i);
+    }
+    acess();
+    window.alert("Global variables I ="+i);
+</script>
+</body>
+</html>

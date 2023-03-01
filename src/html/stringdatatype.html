@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+    // var s = new String("string_is_a_what");
+    // window.alert(s);
+    //big String and small String are the same;
+    //common function>>>> length is property
+    // window.alert(s.indexOf("ing"))
+
+    /*
+    use indexOf(),return a negative if it does not appear in the string
+     */
+    // window.alert("www.bing.com".indexOf("bing")>=0 ? "contain": "not contain")
+    //考点，经常问，substr（开始下标，长度）和substring（开始，结束（不包含））的区别。
+    // substr(startIndex,length) substring(startIndex,endIndex(not include)),
+    //Look at your notes for future interviews.
+
+</script>
+<h1>
+    object data type
+</h1>
+<script type="text/javascript">
+    //Default inheritance object
+    /*
+    object 类型是所有的类型的超类，自定义的任何类型，默认继承object
+    object包含的属性有哪些？
+
+    定义类的语法
+    第一种方式
+      function 类名（形式参数）{
+      }
+      第二种方式
+      类名 = function （形式参数列表）{
+      }
+      和定义函数的方式一样
+      如果以这种方式表示是一个函数
+      sayHello（）；
+      如果以这种方式是一个类
+      var obj = new sayHello();//obj is a reference that holds the memory address to object in the heap
+     */
+    function Student(name,age,sno){
+        // window.alert("student......");
+      this.name = name;
+      this.age =age ;
+      this.sno=sno;
+    }
+    Student();
+    var stu =new Student("lisa",23,7890);
+    window.alert(stu);
+    window.alert(stu.name);
+    window.alert(stu.age);
+    window.alert(stu.sno);
+
+    //js中类的定义和构造函数的定义放在一起，既定义了一个类，也定义了一个构造函数。
+    //  在js中，类的定义和构造方法定义在一起
+</script>
+</body>
+</html>
