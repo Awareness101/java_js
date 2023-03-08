@@ -1,0 +1,9 @@
+使用git命令同步到远程仓库
+1.添加远程仓库的地址
+git remote add    origin（这是后面地址的别名）  git@github.com:Awareness101/java_js.git
+2.将版本号为master推送到远程仓库
+git push -u origin master
+
+clone远程仓库（clone远程仓库作为本地仓库）
+git clone git@github.com:Awareness101/java_js.git
+
